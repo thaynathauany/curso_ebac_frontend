@@ -1,0 +1,26 @@
+.sports {
+  background-color: #e3f2fd;
+}
+
+.economy {
+  background-color: #e8f5e9;
+}
+
+.entertainment {
+  background-color: #fce4ec;
+}
+
+.technology {
+  background-color: #f3e5f5;
+}
+
+section {
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+img {
+  width: 500px;
+  height: 300px;
+}
