@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Validação de Números - Exercício HTML + JS</title>
+
+    <!-- Fonte Inter (igual ao projeto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #05060a;
+            color: #f9fafb;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 16px 24px;
+            background: rgba(3, 5, 12, 0.95);
+            border-bottom: 1px solid #2b2f3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            font-size: 1.4rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: #f5c542;
+            text-shadow: 0 0 10px rgba(245, 197, 66, 0.4);
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 420px;
+            background: #101421;
+            border-radius: 12px;
+            padding: 24px 20px;
+            box-shadow:
+                0 20px 30px rgba(0, 0, 0, 0.8),
+                0 0 0 1px rgba(3, 5, 12, 0.9);
+            border: 1px solid #272b3a;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .card-subtitle {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        label {
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="number"] {
+            background: #020617;
+            border: 1px solid #4b5563;
+            color: #f9fafb;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 0.95rem;
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s, transform 0.1s;
+        }
+
+        input[type="number"]:focus {
+            border-color: #dc2626;
+            box-shadow: 0 0 0 1px rgba(220, 38, 38, 0.7);
+            transform: translateY(-1px);
+        }
+
+        button {
+            margin-top: 8px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            border: none;
+            background: #f5c542;
+            color: #05060a;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.15s, background 0.15s, filter 0.15s;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 18px rgba(245, 197, 66, 0.35);
+            background: #ffd666;
+            filter: brightness(1.02);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: none;
+            filter: brightness(0.95);
+        }
+
+        .message {
+            margin-top: 16px;
+            font-size: 0.9rem;
+            padding: 10px 12px;
+            border-radius: 8px;
+            display: none; /* começa escondida */
+        }
+
+        .message--success {
+            display: block;
+            background: rgba(22, 163, 74, 0.12);
+            border: 1px solid #22c55e;
+            color: #bbf7d0;
+        }
+
+        .message--error {
+            display: block;
+            background: rgba(220, 38, 38, 0.12);
+            border: 1px solid #f87171;
+            color: #fecaca;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 0.75rem;
+            color: #6b7280;
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(31, 41, 55, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Validação de Números</h1>
+    </header>
+
+    <main>
+        <div class="card">
+            <h2 class="card-title">Comparar números</h2>
+            <p class="card-subtitle">
+                O formulário será considerado <strong>válido</strong> quando o valor do
+                <strong>Campo B</strong> for maior que o valor do <strong>Campo A</strong>.
+            </p>
+
+            <form id="comparison-form">
+                <div class="field">
+                    <label for="campoA">Campo A</label>
+                    <input
+                        type="number"
+                        id="campoA"
+                        name="campoA"
+                        placeholder="Digite um número"
+                        required
+                    />
+                </div>
+
+                <div class="field">
+                    <label for="campoB">Campo B</label>
+                    <input
+                        type="number"
+                        id="campoB"
+                        name="campoB"
+                        placeholder="Digite um número maior que o Campo A"
+                        required
+                    />
+                </div>
+
+                <button type="submit">Validar</button>
+
+                <p id="message" class="message"></p>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        Exercício HTML + JS • Curso Front-end EBAC
+    </footer>
+
+    <script>
+        const form = document.getElementById("comparison-form");
+        const campoAInput = document.getElementById("campoA");
+        const campoBInput = document.getElementById("campoB");
+        const messageElement = document.getElementById("message");
+
+        form.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+
+            const valorA = Number(campoAInput.value);
+            const valorB = Number(campoBInput.value);
+
+            messageElement.classList.remove("message--success", "message--error");
+
+            if (campoAInput.value === "" || campoBInput.value === "") {
+                messageElement.textContent = "Preencha os dois campos antes de validar.";
+                messageElement.classList.add("message--error");
+                return;
+            }
+
+            if (valorB > valorA) {
+                messageElement.textContent =
+                    "Formulário válido! O número do Campo B é maior que o número do Campo A.";
+                messageElement.classList.add("message--success");
+            } else {
+                messageElement.textContent =
+                    "Formulário inválido. O número do Campo B deve ser maior que o número do Campo A.";
+                messageElement.classList.add("message--error");
+            }
+        });
+    </script>
+</body>
+</html>
