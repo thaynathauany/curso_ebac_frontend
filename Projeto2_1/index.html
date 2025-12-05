@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="top-header">
+            <div class="avatar-circle">📒</div>
+            <div>
+                <h1>Agenda de contatos</h1>
+                <p>Cadastre nomes e telefones e visualize tudo em uma tabela organizada.</p>
+            </div>
+        </header>
+
+        <form id="form-contato" class="form">
+            <div class="field">
+                <label for="nome-contato">Nome</label>
+                <input
+                    type="text"
+                    id="nome-contato"
+                    name="nome-contato"
+                    placeholder="Ex.: Maria Silva"
+                    required
+                />
+            </div>
+
+            <div class="field">
+                <label for="telefone-contato">Telefone</label>
+                <input
+                    type="tel"
+                    id="telefone-contato"
+                    name="telefone-contato"
+                    placeholder="Ex.: (11) 98765-4321"
+                    required
+                />
+            </div>
+
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--js -->
+                </tbody>
+            </table>
+        </div>
+
+        <p class="nota-minima-info">
+            Dica: evite repetir contatos com o mesmo nome ou número. A agenda não permite nomes e números duplicados.
+        </p>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
