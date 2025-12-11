@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Santos Futebol Clube</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-santos" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o Santos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Partidas & momentos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#conheca" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            História e títulos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale com a torcida
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-santos">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="images/slides/slide1.jpg" alt="Torcida do Santos na Vila Belmiro">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide2.jpg" alt="Jogadores do Santos em campo">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slides/slide3.jpg" alt="Escudo do Santos Futebol Clube">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/santos-vila-belmiro.jpeg" class="d-block w-100 rounded" alt="Estádio Urbano Caldeira (Vila Belmiro)">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o Santos</span></h2>
+                            <p>
+                                Fundado em 1912, o <strong>Santos Futebol Clube</strong> é um dos clubes mais tradicionais do Brasil e do mundo. Conhecido como Peixe e Alvinegro Praiano, o Santos revelou grandes craques, encantou gerações e construiu uma relação única com a cidade de Santos e sua torcida.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">a Vila Belmiro</span></h3>
+                            <p>
+                                A Vila Belmiro, oficialmente Estádio Urbano Caldeira, é a casa do Santos FC e palco de momentos históricos. É um estádio tradicional, intimista e cheio de memórias, onde a proximidade da torcida faz toda a diferença em cada partida.
+                            </p>
+                            <ul>
+                                <li>Fundado em 14 de abril de 1912.</li>
+                                <li>Conhecido mundialmente como o clube de Pelé.</li>
+                                <li>Revelou gerações de Meninos da Vila, como Neymar e Rodrygo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Momentos <span class="text-colored">inesquecíveis</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/titulos-historicos.jpeg" alt="Santos levantando taça" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-trophy-fill"></i>
+                            Títulos históricos
+                        </h3>
+                        <p>
+                            Libertadores, Brasileirões e conquistas internacionais marcaram a história do Santos. O clube coleciona taças e jogos memoráveis que fizeram o Peixe conhecido em todo o planeta.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/meninos-da-vila.webp" alt="Meninos da Vila em campo" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-stars"></i>
+                            Meninos da Vila
+                        </h3>
+                        <p>
+                            O Santos é famoso por revelar grandes talentos. As gerações conhecidas como Meninos da Vila encantaram o futebol com habilidade, ousadia e muitos gols.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/classicos.jpg" alt="Clássicos do Santos FC" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Clássicos e rivalidades
+                        </h3>
+                        <p>
+                            San-São, Clássico da Saudade, Clássico Alvinegro e muitos outros duelos marcaram a trajetória do Santos, sempre com muita emoção dentro de campo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="conheca" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Conheça <span class="text-colored">o Peixe</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-conheca">
+                                <button type="button" id="btn-historia" data-bs-toggle="tab" data-bs-target="#historia" class="fw-bold text-start nav-link text-colored active">História do Santos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#elenco" class="fw-bold text-start nav-link text-colored">Elenco atual</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#titulos" class="fw-bold text-start nav-link text-colored">Grandes títulos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#idolos" class="fw-bold text-start nav-link text-colored">Ídolos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#curiosidades" class="fw-bold text-start nav-link text-colored">Curiosidades</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="historia">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/historia-1912.jpeg" alt="Primeiros anos do Santos FC">
+                                        <h5 class="text-colored fw-bold mt-2">Fundação</h5>
+                                        <p>
+                                            O Santos FC nasceu em 1912 e rapidamente se tornou um dos clubes mais tradicionais do país.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/era-pele.webp" alt="Era Pelé no Santos">
+                                        <h5 class="text-colored fw-bold mt-2">Era Pelé</h5>
+                                        <p>
+                                            A Era Pelé marcou o clube com títulos, goleadas históricas e reconhecimento mundial.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/meninos-vila.jpg" alt="Meninos da Vila">
+                                        <h5 class="text-colored fw-bold mt-2">Meninos da Vila</h5>
+                                        <p>
+                                            Diversas gerações reveladas na base transformaram o Santos em referência na formação de atletas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="elenco">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/elenco-goleiros.jpg" alt="Goleiros do Santos FC">
+                                        <h5 class="text-colored fw-bold mt-2">Goleiros e Defensores</h5>
+                                        <p>
+                                            O elenco atual conta com goleiros seguros e uma defesa formada por jovens e experientes atletas do Peixe.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/elenco-atacantes.webp" alt="Atacantes do Santos FC">
+                                        <h5 class="text-colored fw-bold mt-2">Meio-campo e Ataque</h5>
+                                        <p>
+                                            Meio-campistas criativos e atacantes habilidosos mantêm a tradição ofensiva do Santos em campo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="titulos">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img class="d-block w-100" src="images/santos/trofeu-libertadores.jpg" alt="Taça da Libertadores">
+                                        <h5 class="text-colored fw-bold mt-2">Tricampeão da Libertadores</h5>
+                                        <p>
+                                            O Santos conquistou a América em 1962, 1963 e 2011, sendo um dos maiores campeões do continente.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="idolos">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/pele.jpg" alt="Pelé com a camisa do Santos">
+                                        <h5 class="text-colored fw-bold mt-2">Pelé</h5>
+                                        <p>
+                                            O Rei do Futebol fez história no Santos com gols, títulos e jogadas eternas.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/neymar.webp" alt="Neymar no Santos">
+                                        <h5 class="text-colored fw-bold mt-2">Neymar</h5>
+                                        <p>
+                                            Revelado pelo clube, Neymar brilhou na Vila Belmiro e conquistou títulos importantes antes de ir para a Europa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="curiosidades">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/curiosidade-peixe.webp" alt="Mascote Peixe do Santos">
+                                        <h5 class="text-colored fw-bold mt-2">Mascote</h5>
+                                        <p>
+                                            O mascote do Santos é o Peixe, símbolo da ligação do clube com o mar e a cidade de Santos.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="images/santos/curiosidade-mundial.jpg" alt="Santos campeão mundial">
+                                        <h5 class="text-colored fw-bold mt-2">Título Mundial</h5>
+                                        <p>
+                                            O Santos foi bicampeão mundial em 1962 e 1963, vencendo o Benfica e o Milan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">com a torcida</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="https://www.facebook.com/santosfc" target="_blank">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="https://www.instagram.com/santosfc/" target="_blank">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="https://www.whatsapp.com/channel/0029Va6TcaD2Jl8JkW8xQM2f" target="_blank">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Princesa Isabel, 77 - Vila Belmiro, Santos - SP (Estádio Urbano Caldeira).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

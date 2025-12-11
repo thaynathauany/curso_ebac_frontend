@@ -1,0 +1,95 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.navbar {
+  background-color: #000000;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-conheca .nav-link.active:hover {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  background-color: #f1f1f1;
+}
+
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+#sobre-o-santos,
+#conheca {
+  background-color: #f5f5f5;
+}
+
+.text-colored {
+  color: #111827;
+}
+
+.nav-conheca .nav-link.active,
+#fale-conosco button {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.nav-conheca .nav-link:hover {
+  color: #000000;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+#sobre-o-santos .col-md-5 img,
+#eventos img,
+#conheca img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 490px;
+  object-fit: scale-down;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #9ca3af;
+}
+
+.carousel-indicators .active {
+  background-color: #111827;
+}
+
+.carousel-control-next-icon {
+  background-color: #111827;
+}
+.carousel-control-prev-icon {
+  background-color: #111827;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 280px;
+    object-fit: cover;
+  }
+}
