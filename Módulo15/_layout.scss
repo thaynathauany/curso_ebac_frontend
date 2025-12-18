@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+.container {
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $color-header-bg;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+  }
+}
+
+.menu {
+  display: flex;
+
+  li {
+    font-weight: bold;
+    margin-left: 24px;
+
+    a {
+      color: $color-menu-link;
+      text-decoration: none;
+    }
+  }
+}
+
+section {
+  padding: $section-padding-y 0;
+}
+
+.branding {
+  .logo {
+    width: $logo-width;
+    max-width: $logo-max-width;
+    height: 90px;
+    display: block;
+  }
+}
