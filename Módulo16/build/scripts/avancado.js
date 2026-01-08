@@ -1,0 +1,1 @@
+function ಠ_ಠ742(o,l){return o%l}function ಠ_ಠ743(o,l){return o**l}let valorA=10,valorB=3;console.log("--- Operações Avançadas ---"),console.log("Resto da divisão:",ಠ_ಠ742(valorA,valorB)),console.log("Potência:",ಠ_ಠ743(valorA,2));
