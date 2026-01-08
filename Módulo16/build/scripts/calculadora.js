@@ -1,0 +1,1 @@
+let somar=(o,i)=>o+i,subtrair=(o,i)=>o-i,multiplicar=(o,i)=>o*i,dividir=(o,i)=>0!==i?o/i:"Erro: Divisão por zero",n1=20,n2=4;console.log("--- Resultados Aritméticos ---"),console.log("Soma: "+somar(n1,n2)),console.log("Subtração: "+subtrair(n1,n2)),console.log("Multiplicação: "+multiplicar(n1,n2)),console.log("Divisão: "+dividir(n1,n2));

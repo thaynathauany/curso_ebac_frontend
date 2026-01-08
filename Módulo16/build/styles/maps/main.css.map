@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","Users/thaynasantos/Documents/Estudos/Ebac/Front-end/Exerc%C3%ADcios/M%C3%B3dulo16/source/styles/variaveis.scss"],"names":[],"mappings":"AAEA;EACI,kBCHW","sourcesContent":["@use './variaveis' as *;\n\nbody {\n    background-color: $corPrincipal;\n}","$corPrincipal: #29669f;"],"file":"../main.css"}
