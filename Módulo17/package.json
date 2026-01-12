@@ -1,0 +1,16 @@
+{
+  "name": "modulo17",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "less": "less-watch-compiler src/style src/build/styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "less": "^4.5.1"
+  }
+}
