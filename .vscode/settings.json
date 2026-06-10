@@ -1,0 +1,5 @@
+{
+  "jest.rootPath": "Modulo33",
+  "jest.jestCommandLine": "npm test --",
+  "jest.useJest30": true
+}
