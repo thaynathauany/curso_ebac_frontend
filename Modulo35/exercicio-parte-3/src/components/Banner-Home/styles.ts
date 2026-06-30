@@ -16,6 +16,14 @@ export const Imagem = styled.div`
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (max-width: 767px) {
+    height: 320px;
+
+    .container {
+      padding: 32px 0;
+    }
+  }
 `
 
 export const Titulo = styled.h2`
@@ -24,6 +32,11 @@ export const Titulo = styled.h2`
   color: #e66767;
   font-weight: 900;
   text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 34px;
+  }
 `
 
 export const Logo = styled.img`

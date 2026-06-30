@@ -71,7 +71,10 @@ export const Infos = styled.div`
   position: absolute;
   top: 16px;
   right: 16px;
+  left: 16px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 8px;
 
   ${TagContainer} {
