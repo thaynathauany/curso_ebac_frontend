@@ -5,6 +5,8 @@ import { cores } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.li`
+  display: flex;
+  flex-direction: column;
   background-color: ${cores.branca};
   border: 1px solid ${cores.rose};
   color: ${cores.rose};
@@ -62,7 +64,8 @@ export const Botao = styled(Link)`
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  margin: 8px;
+  align-self: flex-start;
+  margin: auto 8px 8px;
   padding: 4px 6px;
   text-decoration: none;
 `

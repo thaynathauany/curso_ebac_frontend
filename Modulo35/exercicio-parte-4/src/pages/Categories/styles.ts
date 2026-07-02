@@ -61,6 +61,8 @@ export const MenuList = styled.ul`
 `
 
 export const Card = styled.li`
+  display: flex;
+  flex-direction: column;
   background-color: ${cores.rose};
   color: ${cores.begeEscuro};
   padding: 8px;
@@ -70,6 +72,10 @@ export const Card = styled.li`
     height: 167px;
     object-fit: cover;
     display: block;
+  }
+
+  > button {
+    margin-top: auto;
   }
 `
 
